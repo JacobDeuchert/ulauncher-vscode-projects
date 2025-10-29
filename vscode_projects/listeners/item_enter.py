@@ -10,5 +10,5 @@ class ItemEnterEventListener(EventListener):
         """ Handles the click on an item of the extension """
         data = event.get_data()
 
-        code_executable = extension.preferences['code_executable_path'
+        code_executable = extension.preferences['code_executable_path']
         subprocess.run([code_executable, '--folder-uri', data['path']])
